@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Echolyx Vault</title>
+</head>
+<body>
+  <h2>Secure Vault Login</h2>
+  <input type="email" id="email" placeholder="Email"><br>
+  <input type="password" id="password" placeholder="Password"><br>
+  <button onclick="signUp()">Sign Up</button>
+  <button onclick="signIn()">Sign In</button>
+
+  <h2>Vault</h2>
+  <textarea id="vaultInput" placeholder="Enter secret info..."></textarea><br>
+  <button onclick="saveData()">Save Encrypted</button>
+  <button onclick="loadData()">Load & Decrypt</button>
+  <pre id="output"></pre>
+
+  <!-- Supabase & CryptoJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
